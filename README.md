@@ -1,5 +1,6 @@
 # codingNote
 This is a new repository for my studying notes.
+
 Recently i am working on Javascript to strengthen my skills!
 
 ## Here is the Live Server :
