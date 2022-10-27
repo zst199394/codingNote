@@ -70,5 +70,45 @@ var f = 7; // += or -= or *= or /=
 f+=3;
 console.log(f);
 
+var firstName = "Omar";// declare strings
+var myLastName = 'WOKO'; // single or double quotation marks or   backticks
+
+var myStr = "I am a \"double quoted\" string inside \"double quotes\""; // Escaping literal quotes in strings
+console.log(myStr);  //    \" means " in js
+
+var myStr = `'<a href="http://www.youtube.com" target="_blank">Link</a>'`; // use single quote'' or backtick ``
+console.log(myStr);
+
+/****
+Escape Sequences in strings
+
+\'  single quote
+\"  double quote
+\\ backslash
+\n newline
+\r carriage return
+\t tab
+\b backspace
+\f form feed
+  
+ ******/
+
+var myStr = "FirstLine\n\t\\SecondLine\nThirdLine\n\tFourthLine";
+console.log(myStr);
+
+var myStr = "This is the first. " + "This is the second.";// Concatenating strings with plus operator
+console.log(myStr);
+
+var ourStr = "This is start. "
+ourStr += "This is end"
+console.log(ourStr);
+
+var myName = "Mickey mouse";
+var myStr = "My name is " + myName + ", and i am well.";
+console.log(myStr);
+
+
+
+
 
 
