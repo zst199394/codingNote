@@ -129,5 +129,18 @@ console.log(str);//str[0] = "H"; error  CANNOT CHANGE a letter in a string ???  
 str = "Hello world";
 console.log(str);
 
+// word blank
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb){
+    var result = "";
+    result += "The " + myAdjective + " " + myNoun + " " + myVerb + " there " + myAdverb +"!";
+    return result;
+}
+
+console.log(wordBlanks("girl","white","jump","suddenly"))
+
+var myArray =[[1,2,3],[4,5,6],[7,8,9]]
+myArray[0] =[0,1,2,3]// modify array data with index
+var myData = myArray[0][0];// access multi- dimensionnal or array of array with bracket
+console.log(myData);
 
 
