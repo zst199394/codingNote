@@ -117,11 +117,12 @@ console.log(myStr[0]);
 var firstLetterOfName = ""; // Bracket notation to find first character in string
 var name = "Swaroski";
 firstLetterOfName = name[0];
+lastLetterOfNmae = name[name.length - 1]
 console.log(firstLetterOfName);
+console.log(lastLetterOfNmae);
 
-
-
-
-
-
+var str = "Jello world"; // string are immutable !!!!! cannot be altered once created !!!!
+console.log(str);//str[0] = "H"; error  CANNOT CHANGE a letter in a string ???  becuz immutability of strings
+str = "Hello world";
+console.log(str);
 
