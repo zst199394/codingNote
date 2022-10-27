@@ -136,11 +136,32 @@ function wordBlanks(myNoun, myAdjective, myVerb, myAdverb){
     return result;
 }
 
-console.log(wordBlanks("girl","white","jump","suddenly"))
+console.log(wordBlanks("girl","white","jump","suddenly"));
 
 var myArray =[[1,2,3],[4,5,6],[7,8,9]]
-myArray[0] =[0,1,2,3]// modify array data with index
+myArray[0] =[0,1,2,3]// modify array data with index  but ! no modify for string!
 var myData = myArray[0][0];// access multi- dimensionnal or array of array with bracket
 console.log(myData);
+
+// nested Arrays   myArray[0][2]
+
+/* 
+array.push  --- add at the end
+array.pop   --- remove the last element   myArray = ourArray.pop()
+array.shift --- remove the first element 
+array.unshift -- add a new first element at the beginning
+
+*/
+
+var myList = [["cereal", 1],["apple",5],["eggs",12],["banana",6]];//shopping list
+
+function ourFunction(){
+    console.log("Heyyya, world");
+}
+
+ourFunction();
+ourFunction(); // call the function 2 times
+
+
 
 
