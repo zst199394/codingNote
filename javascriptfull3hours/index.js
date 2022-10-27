@@ -162,6 +162,33 @@ function ourFunction(){
 ourFunction();
 ourFunction(); // call the function 2 times
 
+/* passing values to functions with arguments */
+function myFunctionWithArgs(a,b){
+    console.log(a*b);
+}
 
+myFunctionWithArgs(6,5);
+
+/* Global Scopes and functions  */
+var myGlobal = 70;
+// console.log(myGlobal);
+function fun1(){
+   oopsGlobal = 8;    // no var make it global   with var gonna scope to this function
+}
+
+function fun2(){
+    var output = "";
+    if (typeof myGlobal != "undefined"){
+        output += "myGlobal: " + myGlobal;
+    }
+    if (typeof oopsGlobal != "undefined"){
+        output += "oopsGlobal: " + oopsGlobal;
+    }
+    console.log(output);
+
+}
+
+fun1();
+fun2();
 
 
