@@ -107,14 +107,14 @@ var myName = "Mickey mouse";
 var myStr = "My name is " + myName + ", and i am well.";
 console.log(myStr);
 
-var someAdjective = "Excellent!";
+var someAdjective = "Excellent!";  // find length of strings
 var myStr = "You are "
 myStr += someAdjective;
 console.log(myStr);
 console.log(myStr.length);
 console.log(myStr[0]);
 
-var firstLetterOfName = "";
+var firstLetterOfName = ""; // Bracket notation to find first character in string
 var name = "Swaroski";
 firstLetterOfName = name[0];
 console.log(firstLetterOfName);
