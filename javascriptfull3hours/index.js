@@ -191,6 +191,40 @@ function fun2(){
 fun1();
 fun2();
 
+/* local scope and functions*/
+function myLocalScope(){
+    var myVarHere = 2; // myVarHereis  ONLY visiable in localscope 
+    console.log(myVarHere);
+}
 
+myLocalScope();
 
+// console.log(myVarHere);   this will error---- not defined ! cannot access outside of the function
+
+/* local and global scope in functions
+local and global variables can be same name 
+When u do this, the local variable takes precedent over the global variables */
+
+var outerWear = "T-Shirt"; // global var
+
+function myOutfit(){
+    var outerWear = "sweater"; // local var took over global var
+    return outerWear;
+}
+
+console.log(myOutfit());
+console.log(outerWear);
+
+/* Return a value from a function */
+
+function minusSeven(num){
+    return num - 7;
+}
+
+console.log(minusSeven(10));
+
+function timesSix(num){
+    return num * 6;
+}
+console.log(timesSix(2));
 
