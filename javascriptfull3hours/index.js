@@ -299,4 +299,14 @@ function trueOrFalse(wasThatTrue){
 
 console.log(trueOrFalse(true));
 
+/* Comparison with the equality operator
+Double== means checking if the value of this val equals 12;    single = is a assignment operator that is setting  this val to equal 12*/
 
+function testEqual(val){
+    if (val == 12){
+        return "Equal 12";
+    }
+    return "Not equal 12";
+}
+
+console.log("testEqual12 : " + testEqual(10));
