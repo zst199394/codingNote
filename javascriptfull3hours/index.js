@@ -243,3 +243,35 @@ function addFive(){
 }
 
 console.log(addFive());
+
+/* Assignment with a returned value */
+
+var changed = 0;
+
+function change(num){
+    return (num + 5) / 2;
+}
+
+changed = change(15);
+console.log(changed);
+
+var processed = 0;
+
+function processArg(num){
+    return (num * 2)/ 4;
+}
+
+processed = processArg(8);
+console.log(processed);
+
+/* Stand in line */
+function nextInLine(arr, item){
+    arr.push(item);
+    return arr.shift();
+}
+
+var testArr = [1,2,3,4,5];
+
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr,6));
+console.log("After: " + JSON.stringify(testArr));
