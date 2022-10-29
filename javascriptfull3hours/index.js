@@ -164,7 +164,7 @@ ourFunction(); // call the function 2 times
 
 /* passing values to functions with arguments */
 function myFunctionWithArgs(a,b){
-    console.log(a*b);
+    console.log(a*b); // 
 }
 
 myFunctionWithArgs(6,5);
@@ -182,7 +182,7 @@ function fun2(){
         output += "myGlobal: " + myGlobal;
     }
     if (typeof oopsGlobal != "undefined"){
-        output += "oopsGlobal: " + oopsGlobal;
+        output += " oopsGlobal: " + oopsGlobal;// if put var line176 in fun1 then here oppsGlobal is undefined
     }
     console.log(output);
 
@@ -190,5 +190,7 @@ function fun2(){
 
 fun1();
 fun2();
+
+
 
 
