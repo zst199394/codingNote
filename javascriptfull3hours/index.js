@@ -299,7 +299,7 @@ function trueOrFalse(wasThatTrue){
 
 console.log(trueOrFalse(true));
 
-/* Comparison with the equality operator
+/* Comparison with the equality == operator
 Double== means checking if the value of this val equals 12;    single = is a assignment operator that is setting  this val to equal 12*/
 
 function testEqual(val){
@@ -310,3 +310,19 @@ function testEqual(val){
 }
 
 console.log("testEqual12 : " + testEqual(10));
+
+// both will be true 12 or '12'
+
+/* Comparison with the strict Equality === Operator 
+
+ == attempts to convert both values being compared to a common type
+ === does not do the type conversion */
+
+function testStrict(val){
+    if (val === 3){
+        return "Equal 3";
+    }
+    return "Not equal 3";
+}
+console.log("testEqual12 : " + testStrict(3)); // true
+console.log("testEqual12 : " + testStrict('3'));//false
