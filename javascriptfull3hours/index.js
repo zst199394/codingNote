@@ -271,7 +271,8 @@ function nextInLine(arr, item){
     arr.push(item); //new items can be added to the back of the cue
     return arr.shift();  // old items can be removed from the front of the cue
 }
-/*this function gonna add an item to the array and return the fist item on the list
+
+/* this function gonna add an item to the array and return the fist item on the list
 shift()remove the first item and return the first item */
 
 var testArr = [1,2,3,4,5];
@@ -279,3 +280,23 @@ var testArr = [1,2,3,4,5];
 console.log("Before: " + JSON.stringify(testArr)); //change array into a string
 console.log(nextInLine(testArr,6));
 console.log("After: " + JSON.stringify(testArr));
+
+/* Use Conditional Logic with If Statements */
+function ourTrueOrFalse(isItTrue){
+    if (isItTrue){
+        return "Yes, it's true";
+    }
+    return "No, its's false";
+}
+console.log(ourTrueOrFalse(false));
+
+function trueOrFalse(wasThatTrue){
+    if (wasThatTrue){
+        return "Yes, that was true";
+    }
+    return "No, that was false";
+}
+
+console.log(trueOrFalse(true));
+
+
