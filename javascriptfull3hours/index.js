@@ -228,3 +228,18 @@ function timesSix(num){
 }
 console.log(timesSix(2));
 
+/* Understanding undefined value returned from a function */
+var sum = 0 ;
+function addFour(){
+    sum = sum + 4 ;
+    //return sum;   /* without this return console log:undefined ;9 with this 4; 9 */
+}
+
+console.log(addFour()); // undefined cuz didn't return a value
+
+function addFive(){
+    sum += 5;
+    return sum;
+}
+
+console.log(addFive());
