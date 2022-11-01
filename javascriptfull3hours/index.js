@@ -281,6 +281,13 @@ console.log("Before: " + JSON.stringify(testArr)); //change array into a string
 console.log(nextInLine(testArr,6));
 console.log("After: " + JSON.stringify(testArr));
 
+/* Boolean Values */
+function welcomeToBooleans(){
+     return true;
+}
+
+console.log("WelcomeToBoolean : " + welcomeToBooleans());
+
 /* Use Conditional Logic with If Statements */
 function ourTrueOrFalse(isItTrue){
     if (isItTrue){
@@ -326,3 +333,4 @@ function testStrict(val){
 }
 console.log("testEqual12 : " + testStrict(3)); // true
 console.log("testEqual12 : " + testStrict('3'));//false
+
