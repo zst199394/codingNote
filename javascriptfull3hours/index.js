@@ -371,7 +371,7 @@ function testStrictNotEqual(val){
 }
 console.log("testStrictNotEqual: " + testStrictNotEqual('3'));
 
-/* Comparison with the Logical > and Operator */
+/* Comparison with the Logical >  And Operator */
 function testGreaterThan(val){
     if (val > 100){
         return "Over 100";
@@ -387,6 +387,32 @@ function testGreaterThan(val){
  /* Comparison with the Greater Than or Equal >= To Operator */
  function testGreaterThanOrEqual(val){
     if (val >= 20){
+        return "20 or Over";
+    }
+
+    if (val >= 10){
+        return "10 or Over";
+    }
+    return "Less than 10! ";
+}
+ console.log("testGreaterThanOrEqual: " + testGreaterThanOrEqual(10));
+
+ /* Comparison with the Less Than < Operator */
+function testLessThan(val){
+    if (val < 25){
+        return "Under 25";
+    }
+
+    if (val < 55){
+        return "Under 55";
+    }
+    return "55 or over! ";
+}
+ console.log("testLessThan: " + testLessThan(66));
+
+ /* Comparison with the Lerss Than or Equal <= To Operator */
+ function testGreaterThanOrEqual(val){
+    if (val <= 12){
         return "20 or Over";
     }
 
