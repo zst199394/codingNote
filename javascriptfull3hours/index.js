@@ -341,7 +341,7 @@ function compareEqual(a,b){
     }
     return "Not Equal";
 }
-console.log("compareEqual :" + compareEqual(10, "10"));
+console.log("compareEqual :" + compareEqual(10, "10"));// checking number10 and string 10 are equal
 
 function compareStrict(a,b){
     if (a === b){
@@ -351,3 +351,6 @@ function compareStrict(a,b){
 }
 console.log("compareStrict :" + compareStrict(10, "10")); 
 /* number is not equal to  a string cuz it's not converting the types */
+
+
+/* Comparison with the inequality Operator */
