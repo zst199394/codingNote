@@ -370,3 +370,5 @@ function testStrictNotEqual(val){
     return "Equal";
 }
 console.log("testStrictNotEqual: " + testStrictNotEqual('3'));
+
+/* Comparison with the Logical and Operator */
