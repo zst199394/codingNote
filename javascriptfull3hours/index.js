@@ -433,3 +433,13 @@ function testLogicalAnd(val){ //use and&& instead using nested if statementto ch
 }
 console.log("testLogicalAnd: " + testLogicalAnd(40));
 
+ /* Comparisons with the Logical Or || Operator */
+ function testLogicalOr(val){ //use and&& instead using nested if statementto check 2 
+    if (val < 10 || val > 20){ //put 2 ampersands&& means and 
+        return "Outside!"
+    }
+
+    return "inside!"
+}
+console.log("testLogicalOr: " + testLogicalOr(40));
+
