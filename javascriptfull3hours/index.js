@@ -372,3 +372,14 @@ function testStrictNotEqual(val){
 console.log("testStrictNotEqual: " + testStrictNotEqual('3'));
 
 /* Comparison with the Logical and Operator */
+function testGreaterThan(val){
+    if (val > 100){
+        return "Over 100";
+    }
+
+    if (val > 50){
+        return "Over 50";
+    }
+    return "50 or under! ";
+}
+ console.log("testGreaterThan: " + testGreaterThan(66));
