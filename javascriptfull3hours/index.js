@@ -361,3 +361,5 @@ function testNotEqual(val){
     return "Equal";
 }
 console.log("TESTnoteqaul: " + testNotEqual(97));
+
+/* Comparison with the Strict Inequality Operator */
