@@ -354,3 +354,10 @@ console.log("compareStrict :" + compareStrict(10, "10"));
 
 
 /* Comparison with the inequality Operator */
+function testNotEqual(val){
+    if(val != 99){
+        return "Not Equal";
+    }
+    return "Equal";
+}
+console.log("TESTnoteqaul: " + testNotEqual(97));
