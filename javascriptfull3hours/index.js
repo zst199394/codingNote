@@ -443,3 +443,6 @@ console.log("testLogicalAnd: " + testLogicalAnd(40));
 }
 console.log("testLogicalOr: " + testLogicalOr(40));
 
+/* Else Statements  */
+
+
