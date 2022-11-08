@@ -470,3 +470,6 @@ function testElseIf(val){
 }
 
 console.log("testElseIf: " + testElseIf(8));
+
+/* Logical Order in If Else Statements */
+
