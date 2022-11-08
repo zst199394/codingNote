@@ -371,7 +371,7 @@ function testStrictNotEqual(val){
 }
 console.log("testStrictNotEqual: " + testStrictNotEqual('3'));
 
-/* Comparison with the Logical >  And Operator */
+/* Comparison with the Greater Thasn > Operator */
 function testGreaterThan(val){
     if (val > 100){
         return "Over 100";
@@ -422,4 +422,14 @@ function testLessThan(val){
     return "More Than 24 ";
 }
  console.log("testLessThanOrEqual: " + testLessThanOrEqual(10));
+
+ /* Comparisons with the Logical And && Operator */
+function testLogicalAnd(val){ //use and&& instead using nested if statementto check 2 
+    if (val <= 50 && val >=25){ //put 2 ampersands&& means and 
+        return "Yes !"
+    }
+
+    return "No!"
+}
+console.log("testLogicalAnd: " + testLogicalAnd(40));
 
