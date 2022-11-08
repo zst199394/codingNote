@@ -335,5 +335,19 @@ console.log("testEqual12 : " + testStrict('3'));//false
 
 /* Comparing different values 
 */
+function compareEqual(a,b){
+    if (a == b){
+        return "Equal";
+    }
+    return "Not Equal";
+}
+console.log("compareEqual :" + compareEqual(10, "10"));
 
-
+function compareStrict(a,b){
+    if (a === b){
+        return "Equal";
+    }
+    return "Not Equal";
+}
+console.log("compareStrict :" + compareStrict(10, "10")); 
+/* number is not equal to  a string cuz it's not converting the types */
