@@ -411,15 +411,15 @@ function testLessThan(val){
  console.log("testLessThan: " + testLessThan(66));
 
  /* Comparison with the Lerss Than or Equal <= To Operator */
- function testGreaterThanOrEqual(val){
+ function testLessThanOrEqual(val){
     if (val <= 12){
-        return "20 or Over";
+        return "Smaller Than or Equal to 12";
     }
 
-    if (val >= 10){
-        return "10 or Over";
+    if (val <= 24){
+        return "Smaller Than or Equal to 24";
     }
-    return "Less than 10! ";
+    return "More Than 24 ";
 }
- console.log("testGreaterThanOrEqual: " + testGreaterThanOrEqual(10));
+ console.log("testLessThanOrEqual: " + testLessThanOrEqual(10));
 
