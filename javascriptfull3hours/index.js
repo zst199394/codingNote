@@ -360,6 +360,13 @@ function testNotEqual(val){
     }
     return "Equal";
 }
-console.log("TESTnoteqaul: " + testNotEqual(97));
+console.log("TESTnoteqaul: " + testNotEqual(96));
 
 /* Comparison with the Strict Inequality Operator */
+function testStrictNotEqual(val){
+    if(val !== 3){
+        return "Not Equal";
+    }
+    return "Equal";
+}
+console.log("testStrictNotEqual: " + testStrictNotEqual('3'));
