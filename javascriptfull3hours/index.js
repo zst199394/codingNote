@@ -316,9 +316,8 @@ function testEqual(val){
     return "Not equal 12";
 }
 
-console.log("testEqual12 : " + testEqual(10));
+console.log("testEqual12 : " + testEqual(10)); // both will be true 12 or '12'
 
-// both will be true 12 or '12'
 
 /* Comparison with the strict Equality === Operator 
 
@@ -333,4 +332,8 @@ function testStrict(val){
 }
 console.log("testEqual12 : " + testStrict(3)); // true
 console.log("testEqual12 : " + testStrict('3'));//false
+
+/* Comparing different values 
+*/
+
 
