@@ -457,3 +457,16 @@ function testElse(val){
 
 console.log("testELSE: " + testElse(4));
 
+/* Else If Statements   if--else if-else*/
+function testElseIf(val){
+    if (val > 10) { 
+        return "Greater than 10"
+    } else if (val < 5){
+        return "Smaller than 5 ";
+    } else {
+        return "Between 5 and 10"
+
+    }
+}
+
+console.log("testElseIf: " + testElseIf(8));
