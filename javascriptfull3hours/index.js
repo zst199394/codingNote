@@ -444,5 +444,16 @@ console.log("testLogicalAnd: " + testLogicalAnd(40));
 console.log("testLogicalOr: " + testLogicalOr(40));
 
 /* Else Statements  */
+function testElse(val){
+    var result = ""
+    if (val > 5) { //WITHOUT Else nothing will happen if the statement is false
+        result= "Bigger than 5"
+    } else {
+        result = "5 or Smaller";
+    }
 
+    return result;
+}
+
+console.log("testELSE: " + testElse(4));
 
