@@ -472,4 +472,24 @@ function testElseIf(val){
 console.log("testElseIf: " + testElseIf(8));
 
 /* Logical Order in If Else Statements */
+function orderLogic(val){
+    if (val < 10){         // Wrong xxx order !!!!!!!!!!!
+        return "Less than 10";
+    } else if (val < 5){
+        return "Less thsan 5";
+    } else {
+        return "Greater than or equal to 10"
+    }
+}
+console.log("orderLogic: " + orderLogic(2));  //will return "Less than 10" 
 
+function orderMyLogic(val){
+    if (val < 5){         // √√√√√ order !
+        return "Less than 5";
+    } else if (val < 10){
+        return "Less thsan 10";
+    } else {
+        return "Greater than or equal to 10"
+    }
+}
+console.log("orderMyLogic: " + orderMyLogic(2));  //will return "Less than 5"
