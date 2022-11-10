@@ -537,13 +537,15 @@ console.log("golfScores : " + golfScore(5,2));
 
 /* Switch Statements 
 instead of using chained else if statements ~ can use a Switch statement! 
-test val and sets answer for the following conditions: ....   */
+A switch statement tests a value and can have many case statements which define various possible values
+----
+Write a switch statement which tests val and sets answer for the following conditions: ....   */
 function caseinSwitch(val){
     var answer = "";
     switch(val){
-        case 1:
+        case 1:   //val === 1
             answer = "alpha";
-            break;
+            break;  // without break statement will run to next case---
         case 2:
             answer = "beta";
             break;
@@ -556,6 +558,7 @@ function caseinSwitch(val){
     
         
     }
-    return answer;
+
+     return answer;
     }
 console.log("caseinSwitch: "+ caseinSwitch(2));
