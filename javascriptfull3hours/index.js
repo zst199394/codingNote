@@ -494,7 +494,8 @@ function orderMyLogic(val){
 }
 console.log("orderMyLogic: " + orderMyLogic(2));  //will return "Less than 5"
 
-/* Channing if Else statements  */
+/* Channing if Else statements  
+chained if/else if statements to fulfill the diferent conditions:<5 <10 <15....*/
 function testSize(num){
     if (num < 5){
         return "Tiny";
@@ -510,4 +511,5 @@ function testSize(num){
 
 }
 console.log("testSize:  " + testSize(19));
+
 
