@@ -567,7 +567,7 @@ console.log("caseinSwitch: "+ caseinSwitch(2));
 /* Default Option in Switch Statements  */
 
 function switchOfStuff(val){
-    var answer = "";
+    var answer = ""; // ------
     switch(val){
         case "a":
           answer = "apple";
@@ -578,10 +578,41 @@ function switchOfStuff(val){
         case "c":
             answer = "cat";
             break;
-        default:  // if we pass sth else   without this line: answer =""
+        default:  // if we pass sth else ---  without this line: answer =""
             answer = "stuff!";
             break;
     }
     return answer;
 }
-console.log("switchOfStuff: " + switchOfStuff(""));
+console.log("switchOfStuff: " + switchOfStuff(2));
+
+
+/* Multiple Identical Options in Switch Statements 
+ sometimes you want a switch statement where multiple inputs give the same output--
+ --by omitting the break statement */
+function sequentialSizes(val){
+    var answer = "";
+    switch(val){
+        case 1:  // without break between the cases automaticlly go to the  next one
+        case 2:
+        case 3:
+            answer = "Low";
+            break;
+        case 4:
+        case 5:
+        case 6:
+            answer = "Mid";
+            break;
+        case 7:
+        case 8:
+        case 9:
+            answer = "High";
+            break;
+        default :
+        answer = "Stuff ?";
+        
+    }
+     return answer;
+}
+
+console.log("sequentialSizes:  " + sequentialSizes(4));
