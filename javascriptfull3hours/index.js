@@ -505,11 +505,32 @@ function testSize(num){
         return "Medium";
     }else if (num < 20){
         return "Large";
-    }else {
+    }else {                  // anything else ....
         return "Huge";
     }
 
 }
-console.log("testSize:  " + testSize(19));
+console.log("testSize:  " + testSize(88));
 
 
+/* Golf Code  */
+var names = ["Hole-in-one!","Eagel","Birdie","Par","Bogey","Double Bogey","GO HOME! "];
+function golfScore(par, strokes){
+    if ( strokes == 1){
+        return names[0]
+    } else if(strokes <= par -2){
+        return names[1]
+    } else if(strokes <= par -1){
+        return names[2]
+    } else if(strokes <= par){
+        return names[3]
+    } else if(strokes <= par +1){
+        return names[4]
+    } else if(strokes <= par +2){
+        return names[5]
+    } else if(strokes <= par +3){
+        return names[6]
+    }
+
+}
+console.log("golfScores : " + golfScore(5,4))
