@@ -371,7 +371,7 @@ function testStrictNotEqual(val){
 }
 console.log("testStrictNotEqual: " + testStrictNotEqual('3'));
 
-/* Comparison with the Greater Thasn > Operator */
+/* Comparison with the Greater Than > Operator */
 function testGreaterThan(val){
     if (val > 100){
         return "Over 100";
@@ -493,3 +493,21 @@ function orderMyLogic(val){
     }
 }
 console.log("orderMyLogic: " + orderMyLogic(2));  //will return "Less than 5"
+
+/* Channing if Else statements  */
+function testSize(num){
+    if (num < 5){
+        return "Tiny";
+    }else if (num < 10){
+        return "Small";
+    }else if (num < 15){
+        return "Medium";
+    }else if (num < 20){
+        return "Large";
+    }else {
+        return "Huge";
+    }
+
+}
+console.log("testSize:  " + testSize(19));
+
