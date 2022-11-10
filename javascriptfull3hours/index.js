@@ -616,3 +616,7 @@ function sequentialSizes(val){
 }
 
 console.log("sequentialSizes:  " + sequentialSizes(4));
+
+
+
+/* Replacing If Else Chains with Switch  */
