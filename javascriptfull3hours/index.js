@@ -534,3 +534,28 @@ function golfScore(par, strokes){
 
 }
 console.log("golfScores : " + golfScore(5,2));
+
+/* Switch Statements 
+instead of using chained else if statements ~ can use a Switch statement! 
+test val and sets answer for the following conditions: ....   */
+function caseinSwitch(val){
+    var answer = "";
+    switch(val){
+        case 1:
+            answer = "alpha";
+            break;
+        case 2:
+            answer = "beta";
+            break;
+        case 3:
+            answer = "gamma";
+            break;
+        case 4:
+            answer = "delta";
+            break;
+    
+        
+    }
+    return answer;
+    }
+console.log("caseinSwitch: "+ caseinSwitch(2));
