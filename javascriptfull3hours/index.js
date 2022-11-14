@@ -686,3 +686,16 @@ function isLess(a,b){
     return a < b;     // comparison operator will return Boolean !
 }
 console.log(isLess(10,15));
+
+/* Return Early pattern from Functions  */
+
+function abTest(a,b){
+    if (a < 0 || b < 0) {
+        return undefined;  //u can leave the function anytime with a return statement
+    }
+
+
+    return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b),2));
+}
+
+console.log(abTest(2,2));
