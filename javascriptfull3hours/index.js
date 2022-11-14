@@ -623,7 +623,7 @@ console.log("sequentialSizes:  " + sequentialSizes(4));
 function chainToSwitch(val){
     var answer = "";
 
-    if (val === "bob") {  // 
+    if (val === "bob") {  // the chain of If Else statement
         answer = "Marley";
     } else if (val === 42 ) {
         answer = "The Answer";
@@ -642,7 +642,7 @@ console.log("chainToSwitch: " + chainToSwitch(1));
 function chainToSwitch(val){
     var answer = "";
 
-    switch(val){
+    switch(val){ // a switch statement
       case "bob":
         answer = "Marley";
         break;
@@ -668,3 +668,21 @@ function chainToSwitch(val){
     return answer;
 }
 console.log("chainToSwitch: " + chainToSwitch(8));
+
+/* Returning Boolean(true/false value) values from Functions 
+--a trick when u want a function to return a Boolean,a true or false value:
+ All comparison operators return a Boolean true or false value !!
+*/
+function isLess(a,b){
+    if (a < b) {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(isLess(10,15));
+
+function isLess(a,b){
+    return a < b;     // comparison operator will return Boolean !
+}
+console.log(isLess(10,15));
