@@ -842,4 +842,22 @@ console.log("player: " + player);
 
 /** Updating Object Properties  */
 
+var ourDog = {
+    "name": "Doubi",
+    "legs":4,
+    "tails":1,
+    "friens":["hahahahaha"]
+}
 
+ourDog.bark = "bow bow";
+console.log(ourDog);
+
+var myDog = {
+    "name": "Papi",
+    "legs":4,
+    "tails":1,
+    "friens":["Lee","Doubi"]
+}
+
+myDog['bark'] = "Woof! ";
+console.log(myDog);
