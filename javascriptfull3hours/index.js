@@ -827,3 +827,5 @@ var drinkValue = testObj['the drink'];   // '' or ""
 console.log(entreeValue);
 console.log(drinkValue);
 
+
+/** Accessing Object Properties with Variables  */
