@@ -780,8 +780,7 @@ dd(3); dd(4); dd(7); dd('K'); dd('A');  // there is no case2 or caseK
 console.log(dd(2));  
 
 
-/*  Build JavaScript Objects 
- */
+/*  Build JavaScript Objects */
 var ourDog = {
     "name": "Didi", //use properties to access data instead of indexes (arrays)
     "legs": 4,     // property: value(can be :strings/numbers/arrays/any datatype in javascript)
@@ -797,3 +796,17 @@ var myDog = {
     "friends": []
 };
 console.log(myDog);
+
+/*  Accessing Object Properties with Dot Notation  */
+
+var testObj = {
+    "hat": "ballcap",
+    "shirt": "jersey",
+    "shoes": "cleats"
+};
+
+var hatValue = testObj.hat;
+var shirtValue = testObj.shirt;
+console.log("hatValue: " + hatValue);
+console.log("shirtValue: " + shirtValue);
+
