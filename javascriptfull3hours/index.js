@@ -839,3 +839,7 @@ var testObj = {
 var playerNumber = 16;
 var player = testObj[playerNumber];
 console.log("player: " + player);
+
+/** Updating Object Properties  */
+
+
