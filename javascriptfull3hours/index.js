@@ -840,24 +840,31 @@ var playerNumber = 16;
 var player = testObj[playerNumber];
 console.log("player: " + player);
 
-/** Updating Object Properties  */
+/** Updating Object Properties 
+ *  Delete properties from an object
+ */
+
 
 var ourDog = {
     "name": "Doubi",
     "legs":4,
     "tails":1,
-    "friens":["hahahahaha"]
+    "friends":["hahahahaha"]
 }
 
 ourDog.bark = "bow bow";
+console.log(ourDog);
+delete ourDog.tails;
 console.log(ourDog);
 
 var myDog = {
     "name": "Papi",
     "legs":4,
     "tails":1,
-    "friens":["Lee","Doubi"]
+    "friends":["Lee","Doubi"]
 }
 
 myDog['bark'] = "Woof! ";
+console.log(myDog);
+delete myDog["friends"];
 console.log(myDog);
