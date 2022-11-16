@@ -807,6 +807,23 @@ var testObj = {
 
 var hatValue = testObj.hat;
 var shirtValue = testObj.shirt;
+var shoesValue = testObj["shoes"];
 console.log("hatValue: " + hatValue);
 console.log("shirtValue: " + shirtValue);
+console.log("shoesValue: " + shoesValue);
+
+
+/**  Accessing Object Properties with Bracket Notation 
+ Can use [] anytime but it requires when the name has a space in it
+*/
+var testObj = {
+    "an entree": "pizza", // have to use bracket to get the value
+    "my side": "veggies",  
+    "the drink": "soda water"
+};
+
+var entreeValue = testObj["an entree"];  //[the name of the property]
+var drinkValue = testObj['the drink'];   // '' or ""
+console.log(entreeValue);
+console.log(drinkValue);
 
