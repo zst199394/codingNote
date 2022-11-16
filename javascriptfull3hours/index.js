@@ -829,3 +829,13 @@ console.log(drinkValue);
 
 
 /** Accessing Object Properties with Variables  */
+
+var testObj = {
+    12: "Nike",
+    16: "Montana",
+    19: "Uno"
+};
+
+var playerNumber = 16;
+var player = testObj[playerNumber];
+console.log("player: " + player);
