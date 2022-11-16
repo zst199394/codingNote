@@ -780,11 +780,20 @@ dd(3); dd(4); dd(7); dd('K'); dd('A');  // there is no case2 or caseK
 console.log(dd(2));  
 
 
-/*  Build JavaScript Objects  */
+/*  Build JavaScript Objects 
+ */
 var ourDog = {
-    "name": "Didi",
-    "legs": 4,
+    "name": "Didi", //use properties to access data instead of indexes (arrays)
+    "legs": 4,     // property: value(can be :strings/numbers/arrays/any datatype in javascript)
     "tails": 1,
     "friends": ["everything !"]
 };
 console.log(ourDog);
+
+var myDog = {
+    "name": "Ken",
+    "legs": 3,
+    "tails": 1,
+    "friends": []
+};
+console.log(myDog);
