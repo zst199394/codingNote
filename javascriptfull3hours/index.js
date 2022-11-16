@@ -781,4 +781,10 @@ console.log(dd(2));
 
 
 /*  Build JavaScript Objects  */
-
+var ourDog = {
+    "name": "Didi",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["everything !"]
+};
+console.log(ourDog);
