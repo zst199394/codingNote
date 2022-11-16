@@ -706,7 +706,7 @@ console.log(abTest(2,2));
 
 var count = 0;
 
-function cc(card) {
+function cC(card) {
     
 
 
@@ -715,7 +715,7 @@ function cc(card) {
 
 
 //cc(2); cc(3); cc(7); cc('K'); cc('A');
-console.log(cc(4));  // "Change Me!"
+console.log(cC(4));  // "Change Me!"
 
 
 var count = 0;
@@ -747,8 +747,38 @@ function cc(card) {
     return count + " " + holdbet;
 }
  
-cc(2); cc(3); cc(7); cc('K'); cc('A');
+cc(2); cc(3); cc(7); cc('K'); cc('A'); // there is no case7
 console.log(cc(4));  //  1 Bet
 
+//Practice*** 
+var count = 0;
+function dd(card){
+    switch(card){
+        case 3:
+        case 4:
+        case 7:
+            count ++;
+            break;
+        case "A":
+            count --;
+            break;
+        default:
+            count + 0;
+            break;
+        
+    }
 
-/** Build JavaScript Objects  */
+    var holdbet = "Hold";
+    if (count > 0 ){
+        holdbet = 'Bet';
+    }
+
+     return count + " -- " + holdbet;
+}
+
+dd(3); dd(4); dd(7); dd('K'); dd('A');  // there is no case2 or caseK
+console.log(dd(2));  
+
+
+/*  Build JavaScript Objects  */
+
