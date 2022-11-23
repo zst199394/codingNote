@@ -964,3 +964,19 @@ console.log(checkObj("b"));
  console.log(myMusic[2]);
 
 /*** Accessing Nested Objects  */
+var myStorage = {
+    "car": {
+        "inside": {
+            "glove box": "maps",
+            "passenger seat": "crumbs"
+        },
+        "outside": {
+            "trunk": "jack"
+        }
+    },
+    "closet": "clothes"
+};
+console.log(myStorage.car.outside.trunk);
+
+var gloveBoxContents = myStorage.car.inside["glove box"];
+console.log(gloveBoxContents);
