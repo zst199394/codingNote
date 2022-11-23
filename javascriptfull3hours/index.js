@@ -934,3 +934,29 @@ function checkObj(checkProp) {
 
 }
 console.log(checkObj("b"));
+
+
+/** Manipulating Complex Objects 
+ inside the array are objects ----
+  inside the objects are all key value pairs with the strings and the numbers and so on
+*/
+
+ var mymusic = [
+    {
+        "artist": "Bruno Marz",
+        "title": "Uptown Funk",
+        "release_year": 2015
+    },
+    {
+        "artist": "Micheal Bubly",
+        "title": "Home",
+        "release_year": 2004
+
+    },
+    {
+        "artist": "Sherom",
+        "title": "love",
+        "release_year": 2034
+
+    }
+ ]
