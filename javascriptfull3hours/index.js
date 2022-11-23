@@ -872,3 +872,40 @@ console.log(myDog);   // 1:55:54
 
 /** Using objects for Lookups **/
 
+function phoneticLookup(val){
+    var result = "";
+
+    switch(val) {
+        case "alpha":
+            result = "Adams";
+            break;
+        case "bravo":
+            result = "Boston";
+            break;
+        case "charlie":
+            result = "Chicago";
+            break;
+        case "delta":
+            result = "Denver";
+            break;
+    }
+
+    return result;
+}
+console.log(phoneticLookup("bravo"));
+
+
+function myLookup(val){
+    var result = "";
+
+    var lookup = {
+        "alpha": "Adams",
+        "bravo": "Boston",
+        "charlie": "Chicago",
+        "delta": "Denver"
+    };
+    result = lookup[val];
+
+    return result;
+}
+console.log("myLookup: " + myLookup("bravo"));
