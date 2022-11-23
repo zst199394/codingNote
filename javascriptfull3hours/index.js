@@ -980,3 +980,7 @@ console.log(myStorage.car.outside.trunk);
 
 var gloveBoxContents = myStorage.car.inside["glove box"];
 console.log(gloveBoxContents);
+
+/** Accessing Nested Arrays */
+
+
