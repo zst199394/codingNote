@@ -908,4 +908,6 @@ function myLookup(val){
 
     return result;
 }
-console.log("myLookup: " + myLookup("bravo"));
+console.log("myLookup: " + myLookup("delta"));
+
+/** Testing Objects for Properties  */
