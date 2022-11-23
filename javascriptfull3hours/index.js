@@ -962,3 +962,5 @@ console.log(checkObj("b"));
     }
  ];
  console.log(myMusic[2]);
+
+/*** Accessing Nested Objects  */
