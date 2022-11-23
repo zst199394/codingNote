@@ -917,3 +917,20 @@ var myObj = {
     bed: "sleigh"
 };
 console.log(myObj.gift);
+
+var newObj = {
+    gift: "ring",
+    pet: "cat",
+    bed: "mattress"
+};
+
+function checkObj(checkProp) {
+    if (newObj.hasOwnProperty(checkProp)) {
+        return newObj[checkProp];
+
+    }else {
+        return "Not Found !"
+    }
+
+}
+console.log(checkObj("b"));
