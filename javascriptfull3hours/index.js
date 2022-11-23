@@ -911,3 +911,9 @@ function myLookup(val){
 console.log("myLookup: " + myLookup("delta"));
 
 /** Testing Objects for Properties  */
+var myObj = {
+    gift: "watch",
+    pet: "dog",
+    bed: "sleigh"
+};
+console.log(myObj.gift);
