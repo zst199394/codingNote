@@ -939,9 +939,10 @@ console.log(checkObj("b"));
 /** Manipulating Complex Objects 
  inside the array are objects ----
   inside the objects are all key value pairs with the strings and the numbers and so on
+   each object holds data and a property which is the key value format ----similar to JSON
 */
 
- var mymusic = [
+ var myMusic = [
     {
         "artist": "Bruno Marz",
         "title": "Uptown Funk",
@@ -959,4 +960,5 @@ console.log(checkObj("b"));
         "release_year": 2034
 
     }
- ]
+ ];
+ console.log(myMusic[2]);
