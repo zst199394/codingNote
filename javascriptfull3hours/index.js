@@ -868,3 +868,4 @@ myDog['bark'] = "Woof! ";
 console.log(myDog);
 delete myDog["friends"];
 console.log(myDog);
+
