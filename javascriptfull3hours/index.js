@@ -867,5 +867,8 @@ var myDog = {
 myDog['bark'] = "Woof! ";
 console.log(myDog);
 delete myDog["friends"];
-console.log(myDog);
+console.log(myDog);   // 1:55:54
+
+
+/** Using objects for Lookups **/
 
