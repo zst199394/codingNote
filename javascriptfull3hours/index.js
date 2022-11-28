@@ -1097,7 +1097,7 @@ console.log(ourArray);
 
 /** Iterate Odd Numbers With a For LOOP */
 var oddArray = [];
-
+/* count odd numbers from  0 to 11 */
 for (var i = 0; i < 11; i += 2) {
     oddArray.push(i);
 } 
@@ -1107,6 +1107,16 @@ console.log(oddArray);
 
 
 /** Count Backwards with a For Loop */
+var myArray =[];
 
+for (var i= 10; i > 0; i -= 2) {  //count odd numbers from 10 to 0
+    myArray.push(i);
+}
 
+console.log(myArray);
 
+var ourArray = [];
+for (var i=111; i > 100; i -=3) {
+    ourArray.push(i);
+}
+console.log(ourArray);
