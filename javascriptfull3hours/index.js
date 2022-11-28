@@ -1082,8 +1082,17 @@ while(i < 5) {
     i++;
 }
 
-console.log(myArray);
+console.log(myArray);  [0,1,2,3,4]
 
 
+/* Iterate With For Loops */
+var ourArray =[];
+
+for (var i = 0; i < 8; i++) {
+    ourArray.push(i);
+}
+
+console.log("ourAray:");
+console.log(ourArray);
 
 
