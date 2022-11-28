@@ -1106,3 +1106,7 @@ console.log("oddArray: ");
 console.log(oddArray);
 
 
+/** Count Backwards with a For Loop */
+
+
+
