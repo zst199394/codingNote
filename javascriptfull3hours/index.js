@@ -1055,9 +1055,9 @@ console.log(collectionCopy);
 
 function updateRecords(id, prop, value) {
     if (value === "") {
-        delete collection[id][prop];
+        delete collection[id][prop];  // delete if there is no value for this property
     } else if (prop === "tracks") {
-        collection[id][prop] = collection[id][prop] || [];
+        collection[id][prop] = collection[id][prop] || []; // make sure tracks will be array -exist or nor exist yet
         collection[id][prop].push(value);
     } else {
         collection[id][prop] = value;
@@ -1070,7 +1070,19 @@ updateRecords(5439,"tracks","1234....");
 console.log(updateRecords(5439,"album","ABCD"));
 
 
-/*** Iterate with While Loops */
+/*** Iterate with While Loops 
+ # While loop ---runs while a specified condition is true and stops once it's no longer true
+*/
+
+var myArray = [];
+
+var i = 0;
+while(i < 5) {
+    myArray.push(i);
+    i++;
+}
+
+console.log(myArray);
 
 
 
