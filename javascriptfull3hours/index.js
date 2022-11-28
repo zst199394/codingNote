@@ -1095,4 +1095,15 @@ for (var i = 0; i < 8; i++) {
 console.log("ourAray:");
 console.log(ourArray);
 
+/** Iterate Odd Numbers With a For LOOP */
+
+var oddArray = [];
+
+for (var i = 0; i < 16; i += 2) {
+    oddArray.push(i);
+} 
+
+console.log("oddArray: ");
+console.log(oddArray);
+
 
