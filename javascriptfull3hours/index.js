@@ -1006,3 +1006,65 @@ console.log(secondTree);
 
 
 /** Record Collection  */
+var collection = {
+    "2548": {
+        "album": "Red River Blue",
+        "artist": "Blake Shelton",
+        "tracks": [
+            "Home",
+            "HONEY BEE"
+        ]
+    },
+    "2468": {
+        "album": "Californiacation",
+        "artist": "Red Hot Chili Peppers",
+        "tracks": [
+            "Otherside",
+            "Californiacation"
+        ]
+    },
+    "1245": {
+        "album": "Blood Sugar Sex Magik",
+        "artist": "Red Hot Chili Peppers",
+        "tracks": [
+            "Give It Away",
+            "Suck My Kiss",
+            "Under The Bridge"
+        ]
+    },
+    "2344": {
+        "album": "It's Time",
+        "artist": "Michael Bublé",
+        "tracks": [
+            "Home",
+            "Feeling Good",
+            "Quando,Quando,Quando"
+        ]
+    },
+    "2345": {
+        "album": "My Music"
+    },
+    "2990": {
+        "artist": "Prince",
+        "track": [ ]
+    }
+};
+
+var colloectionCopy = JSON.parse(JSON.stringify(collection));
+console.log(colloectionCopy);
+
+function updateRecords(id, prop, value) {
+    if (value === "") {
+        delete collection[id][prop];
+    } else if (prop === "tracks") {
+        collection[id][prop] = collection[id][prop] || [];
+        collection[id][prop].push(value);
+    } else {
+        collection[id][prop] = value;
+    }
+    return collection;
+}
+
+console.log(updateRecords(5439, "artist", "Abcd"));
+
+
