@@ -1044,14 +1044,14 @@ var collection = {
     "2345": {
         "album": "My Music"
     },
-    "2990": {
+    "5439": {
         "artist": "Prince",
-        "track": [ ]
+        "tracks": [ ]
     }
 };
 
-var colloectionCopy = JSON.parse(JSON.stringify(collection));
-console.log(colloectionCopy);
+var collectionCopy = JSON.parse(JSON.stringify(collection));
+console.log(collectionCopy);
 
 function updateRecords(id, prop, value) {
     if (value === "") {
@@ -1065,6 +1065,7 @@ function updateRecords(id, prop, value) {
     return collection;
 }
 
-console.log(updateRecords(5439, "artist", "Abcd"));
+updateRecords(5439, "tracks", "test...");
+console.log(updateRecords(5439,"album","ABCD"));
 
 
