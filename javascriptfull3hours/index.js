@@ -1120,3 +1120,6 @@ for (var i=111; i > 100; i -=3) {
     ourArray.push(i);
 }
 console.log(ourArray);
+
+
+/** Iterate Through an Array with a For Loop */
