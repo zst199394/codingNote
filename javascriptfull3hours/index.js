@@ -1224,4 +1224,10 @@ console.log(randomFraction());
 
 
 /* Generate Random Whole Numbers  */
+var randomNumberBetween0and19 = Math.floor(Math.random() * 20); //Math.floor---round down to the nearest whole number 0~19
 
+function randomWholeNum() {
+    return Math.floor(Math.random() * 10); // random 0~9
+}
+
+console.log(randomWholeNum());
