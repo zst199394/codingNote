@@ -1123,3 +1123,13 @@ console.log(ourArray);
 
 
 /** Iterate Through an Array with a For Loop */
+
+var myArr = [1,2,3,4,5,6];
+var myTotal = 0;
+
+for (var i = 0; i < myArr.length; i++) { //we add start from 0 and went through every element of array 
+    myTotal += myArr[i];
+}
+
+console.log("myTotal: " + myTotal);
+
