@@ -1174,3 +1174,42 @@ var i = 10;
 console.log(i,myArray);    // log out: 11,[10]
 
 /** Profile Lookup */ 
+var contacts = [
+    {
+        "firstName": "Amy",
+        "lastName": "Linen",
+        "number": "093727328",
+        "likes":["Gym","violin"]
+    },
+    {
+        "firstName": "Billy",
+        "lastName": "Elliesh",
+        "number": "053456568",
+        "likes":["sing","Magic","Piano"]
+    },
+    {
+        "firstName": "Harry",
+        "lastName": "Pottern",
+        "number": "0255646746",
+        "likes":["Magic","Hogwarts","Painting"]
+    },
+    {
+        "firstName": "Sherlock",
+        "lastName": "Homes",
+        "number": "074523132",
+        "likes":["Intriguing Cases","violin","somking"]
+    },
+
+];
+
+function lookUpProfile(name, prop){
+    for (var i = 0; i < contacts.length; i++) {
+        if(contacts[i].firstName === name){
+            return contacts[i][prop] || "No such property";
+        }
+    }
+    return "No Such Contact";
+}
+
+var data = lookUpProfile("Harry", "likes");
+console.log(data);
