@@ -1213,3 +1213,11 @@ function lookUpProfile(name, prop){
 
 var data = lookUpProfile("Harry", "likes");
 console.log(data);
+
+/** Generate Random Fractions */
+function randomFraction() {
+
+    return Math.random();   // 小数 between 0 (ould be 0) and 1(but not be 1)
+}
+
+console.log(randomFraction());
