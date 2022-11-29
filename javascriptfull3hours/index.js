@@ -1217,13 +1217,16 @@ console.log(data);
 /** Generate Random Fractions */
 function randomFraction() {
 
-    return Math.random();   // 分数  between 0 (ould be 0) and 1(but not be 1)
+    return Math.random();   // 分数  Math.random--demical number between 0 (ould be 0) and 1(but not be 1)
 }
 
 console.log(randomFraction());
 
 
-/* Generate Random Whole Numbers  */
+/* Generate Random Whole Numbers  
+Math.floor -function--can get random whole num instead of a random demical num 
+we pass in (Math.random()*20)--function-- into Math.floor-function-   then we round down to the nearest whole number
+*/
 var randomNumberBetween0and19 = Math.floor(Math.random() * 20); //Math.floor---round down to the nearest whole number 0~19
 
 function randomWholeNum() {
@@ -1231,3 +1234,5 @@ function randomWholeNum() {
 }
 
 console.log(randomWholeNum());
+
+
