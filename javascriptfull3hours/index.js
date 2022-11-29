@@ -1237,5 +1237,10 @@ console.log(randomWholeNum());
 
 
 /* Generate Random Whole Numbers with a Range  */
+function myRandomRange( myMin, myMax) {
 
+    return Math.floor(Math.random() * (myMax - myMin +1)) + myMin;
+}
 
+var myRandom = myRandomRange(15,30);
+console.log(myRandom);
