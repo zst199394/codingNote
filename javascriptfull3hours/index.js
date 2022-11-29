@@ -1169,6 +1169,8 @@ var i = 10;
  do{
     myArray.push(i); // do while loop  will always run at least 1 time then it will check the condition
     i++;
-} while (i < 5)
+} while (i < 5) // the conditon is false so it will break out the loop
 
 console.log(i,myArray);    // log out: 11,[10]
+
+/** Profile Lookup */ 
