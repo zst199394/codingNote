@@ -1217,7 +1217,11 @@ console.log(data);
 /** Generate Random Fractions */
 function randomFraction() {
 
-    return Math.random();   // 小数 between 0 (ould be 0) and 1(but not be 1)
+    return Math.random();   // 分数  between 0 (ould be 0) and 1(but not be 1)
 }
 
 console.log(randomFraction());
+
+
+/* Generate Random Whole Numbers  */
+
