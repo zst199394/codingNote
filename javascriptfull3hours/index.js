@@ -1236,3 +1236,6 @@ function randomWholeNum() {
 console.log(randomWholeNum());
 
 
+/* Generate Random Whole Numbers with a Range  */
+
+
