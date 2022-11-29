@@ -1153,3 +1153,22 @@ console.log(product);
 
 
 /*  Iterate With Do...While Loops */
+var myArray = [];
+var i = 10;
+
+while (i < 5) {     //while loop first checks the condition before it runs any code within the loop
+    myArray.push(i);
+    i++;
+}
+
+console.log(i,myArray);  //log out: 10 , []
+
+var myArray = [];
+var i = 10;
+
+ do{
+    myArray.push(i); // do while loop  will always run at least 1 time then it will check the condition
+    i++;
+} while (i < 5)
+
+console.log(i,myArray);    // log out: 11,[10]
