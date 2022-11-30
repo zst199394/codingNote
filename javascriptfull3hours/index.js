@@ -1255,7 +1255,16 @@ function convertToInteger(str) {
 console.log("convertToInteger: " + convertToInteger("789")); // 2:32:30
 
 
-/** USe the paeseInt Function with a Radix  */
+/** USe the paeseInt Function with a Radix 
+ * 2 = binary 二进制  
+ * 8 = octal 八进制
+ * 10 = demical 十进制
+ * 16 = hexadecimal 十六进制  
+ * Notes： 
+If the first character cannot be converted, NaN is returned.
+  default:  base 10
+*/
+
 function convertToInt(str) {
     return parseInt(str,2)   // base 2 would be binary
 }
