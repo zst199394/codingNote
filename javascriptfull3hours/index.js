@@ -1246,12 +1246,17 @@ var myRandom = myRandomRange(15,30);
  
 console.log(myRandom);  //2:30:31
 
+
 /** Use the ParseInt Function **/
 function convertToInteger(str) {
     return parseInt(str);
 
 }
-
 console.log("convertToInteger: " + convertToInteger("789")); // 2:32:30
 
-/** USe the  paeseInt Function with a Radix  */
+
+/** USe the paeseInt Function with a Radix  */
+function convertToInt(str) {
+    return parseInt(str,2)   // base 2 would be binary
+}
+console.log("convertToInt: " + convertToInt("10011")); //10011 is a binary number ; covert to an integer
