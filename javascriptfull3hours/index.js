@@ -1247,3 +1247,9 @@ var myRandom = myRandomRange(15,30);
 console.log(myRandom);  //2:30:31
 
 /** Use the ParseInt Function **/
+function convertToInteger(str) {
+    return parseInt(str);
+
+}
+
+console.log("convertToInteger: " + convertToInteger("78"));
