@@ -1252,4 +1252,6 @@ function convertToInteger(str) {
 
 }
 
-console.log("convertToInteger: " + convertToInteger("78"));
+console.log("convertToInteger: " + convertToInteger("789")); // 2:32:30
+
+/** USe the  paeseInt Function with a Radix  */
