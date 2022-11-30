@@ -1243,4 +1243,8 @@ function myRandomRange( myMin, myMax) {
 }
 
 var myRandom = myRandomRange(15,30);
-console.log(myRandom);
+console.log(myRandom);  //2:30:31
+
+
+
+
