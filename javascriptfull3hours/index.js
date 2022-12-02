@@ -1286,3 +1286,6 @@ function checkEqual(a,b) {
 console.log(checkEqual(1,2));
 
 
+/* Use Multiple Conditional(Ternary) Operator  */
+
+
