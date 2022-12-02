@@ -1252,7 +1252,7 @@ function convertToInteger(str) {
     return parseInt(str);
 
 }
-console.log("convertToInteger: " + convertToInteger("789")); // 2:32:30
+console.log("convertToInteger: " + convertToInteger("89")); // 2:32:30 return NaN for not a number
 
 
 /** USe the paeseInt Function with a Radix 
@@ -1270,4 +1270,5 @@ function convertToInt(str) {
 }
 console.log("convertToInt: " + convertToInt("10011")); //10011 is a binary number ; covert to an integer 2:33:42
 
-/***** */
+
+/* Use the Conditional(Ternary) Operator  */
