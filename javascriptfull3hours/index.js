@@ -1268,4 +1268,6 @@ If the first character cannot be converted, NaN is returned.
 function convertToInt(str) {
     return parseInt(str,2)   // base 2 would be binary
 }
-console.log("convertToInt: " + convertToInt("10011")); //10011 is a binary number ; covert to an integer
+console.log("convertToInt: " + convertToInt("10011")); //10011 is a binary number ; covert to an integer 2:33:42
+
+/***** */
