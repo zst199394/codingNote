@@ -1262,7 +1262,7 @@ console.log("convertToInteger: " + convertToInteger("89")); // 2:32:30 return Na
  * 16 = hexadecimal 十六进制  
  * Notes： 
 If the first character cannot be converted, NaN is returned.
-  default:  base 10
+  default:  base 10 we use everyday
 */
 
 function convertToInt(str) {
@@ -1271,4 +1271,18 @@ function convertToInt(str) {
 console.log("convertToInt: " + convertToInt("10011")); //10011 is a binary number ; covert to an integer 2:33:42
 
 
-/* Use the Conditional(Ternary) Operator  */
+/* Use the Conditional(Ternary) Operator 
+
+* conditon ? statement-if-true: statement-if-false;
+*/
+
+function checkEqual(a,b) {
+   return a === b ? true : false;
+    
+   // return a === b;       
+/* do the same thing like last line*/
+
+}
+console.log(checkEqual(1,2));
+
+
