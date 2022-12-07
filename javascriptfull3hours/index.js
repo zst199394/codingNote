@@ -1293,7 +1293,7 @@ function checkSign(num) {
 console.log("checkSign: " + checkSign(0));
 
 
-/** Differences Between the var and let Keywords 
+/** Differences Between the var and let Keywords     ?????
  * var
  * let   ----Doesn't let you declare a variable twice !!!
  * const
@@ -1320,7 +1320,50 @@ console.log("catTalk"+catTalk);
 
 
 /** Compare Scopes of the var and let Keywords
+ * var -----globally  or locally if declared inside a function !!!!!
  */
 
+function checkScope() {
+    "use strict";
+    var i ="function scope";
+    if(true) {
+        i = "block scope";
+        console.log("Block scope i is: ", i);  // "block scope"
+    }
+
+    console.log("Function scope i is: ", i);  // "block scope"
+    return i;
+}
+
+checkScope();
 
 
+function checkTheScope() {
+    "use strict";
+    let i ="function scope";
+    if(true) {
+        let i = "block scope";
+        console.log("Block scope i is: ", i);  // "block scope"
+    }
+
+    console.log("Function scope i is: ", i);  // "function scope"
+    return i;
+}
+
+checkTheScope();
+
+/** This is why people use let instead of var is so that they can
+ *  make sure the variable is only defined in the area they want it to be defined in*/
+function checkAScope() {
+    "use strict";
+    //let i ="function scope";
+    if(true) {
+       var i = "block scope";   /** let i = "block scope ;  then function scope return error- not defined" */
+        console.log("Block scope i is: ", i);  // "block scope"
+    }
+
+    console.log("Function scope i is: ", i);  // "block scope"
+    return i;
+}
+
+checkAScope();
