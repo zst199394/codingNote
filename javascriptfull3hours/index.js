@@ -1301,7 +1301,24 @@ console.log("checkSign: " + checkSign(0));
 
 
 
-/** Compare Scopes of the var and let Keywords */
+/** Compare Scopes of the var and let Keywords
+ * a lot of people use "use strict" at the top of a full Javascript file or just in a function to catch coding mistakes
+ * such as if u create a vaiable and don't declare it with var,let ,or const
+ */
+let catName = "Quuuu";
+let quote;
 
+catName = " Buuu";
+
+function catTalk() {
+    "use strict";     /** This enables strict mode which catches common coding mistakes and unsafe actions ???? */
+
+//    catName = "MaoMao";
+    quote = catName + " says Meow !";
+}
+
+console.log("catTalk"+catTalk);
+
+//let catName = "Koooo";  /* error !!!!! */
 
 
