@@ -1301,3 +1301,7 @@ console.log("checkSign: " + checkSign(0));
 
 
 
+/** Compare Scopes of the var and let Keywords */
+
+
+
