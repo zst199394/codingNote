@@ -1297,14 +1297,10 @@ console.log("checkSign: " + checkSign(0));
  * var
  * let   ----Doesn't let you declare a variable twice !!!
  * const
-*/
-
-
-
-/** Compare Scopes of the var and let Keywords
- * a lot of people use "use strict" at the top of a full Javascript file or just in a function to catch coding mistakes
+* a lot of people use "use strict" at the top of a full Javascript file or just in a function to catch coding mistakes
  * such as if u create a vaiable and don't declare it with var,let ,or const
  */
+
 let catName = "Quuuu";
 let quote;
 
@@ -1320,5 +1316,11 @@ function catTalk() {
 console.log("catTalk"+catTalk);
 
 //let catName = "Koooo";  /* error !!!!! */
+
+
+
+/** Compare Scopes of the var and let Keywords
+ */
+
 
 
