@@ -1282,8 +1282,12 @@ function checkEqual(a,b) {
    //  return a === b;       /* do the same thing like last line*/
 
 }
-console.log(checkEqual(1,2));
+console.log("checkEqual：  "+checkEqual(1,2));
 
 
 /* Use Multiple Conditional(Ternary) Operator  */
 
+function checkSign(num) {
+    return num > 0 ? "positive" : num < 0 ? "negative" : "zero"
+}
+console.log("checkSign: " + checkSign(0));
