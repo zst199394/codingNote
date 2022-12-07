@@ -1372,5 +1372,7 @@ checkAScope();
 /**** Declare a Read-Only Variable with the const Keyword
  * const has all the features of let but it's also read-only
  * cannot reassign a const 
- */
+ * Always use const if you never want to reassign a variable !!!!!
+ *  so u don't accidentally reassign it when u don't mean to
+ * const SENTENCE = str + "";   it's very common to use all capital letters so u remember that it's a const */
 
