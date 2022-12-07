@@ -1279,13 +1279,11 @@ console.log("convertToInt: " + convertToInt("10011")); //10011 is a binary numbe
 function checkEqual(a,b) {
    return a === b ? true : false;
     
-   // return a === b;       
-/* do the same thing like last line*/
+   //  return a === b;       /* do the same thing like last line*/
 
 }
 console.log(checkEqual(1,2));
 
 
 /* Use Multiple Conditional(Ternary) Operator  */
-
 
