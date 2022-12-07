@@ -1291,3 +1291,8 @@ function checkSign(num) {
     return num > 0 ? "positive" : num < 0 ? "negative" : "zero"
 }
 console.log("checkSign: " + checkSign(0));
+
+
+/** Differences Between the var and let Keywords */
+
+
