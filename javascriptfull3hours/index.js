@@ -1369,4 +1369,8 @@ function checkAScope() {
 checkAScope();
 
 
-/**** Declare a Read-Only Variable with the const Keyword */
+/**** Declare a Read-Only Variable with the const Keyword
+ * const has all the features of let but it's also read-only
+ * cannot reassign a const 
+ */
+
