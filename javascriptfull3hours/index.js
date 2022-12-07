@@ -1293,6 +1293,11 @@ function checkSign(num) {
 console.log("checkSign: " + checkSign(0));
 
 
-/** Differences Between the var and let Keywords */
+/** Differences Between the var and let Keywords 
+ * var
+ * let   ----Doesn't let you declare a variable twice !!!
+ * const
+*/
+
 
 
