@@ -1387,6 +1387,18 @@ function printManyTimes(str) {
         console.log(sentence);
     }
 }
-
 printManyTimes("MICKEY");
 
+
+function printMany(str) {
+    "use strict";
+
+    const SENTENCE = str + " is cool!";
+     /*const SENTENCE = str + "";   it's very common to use all capital letters so u remember that it's a const*/
+    //sentence = str + " is amazing!";
+
+    for (let i=0; i < str.length; i+=2) {
+        console.log(SENTENCE);
+    }
+}
+printMany("MICKEY");
