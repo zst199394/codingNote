@@ -1419,3 +1419,4 @@ editInPlace();
 console.log(s);
 
 
+/** Prevent object Mutation  */
