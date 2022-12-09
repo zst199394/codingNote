@@ -1376,3 +1376,17 @@ checkAScope();
  *  so u don't accidentally reassign it when u don't mean to
  * const SENTENCE = str + "";   it's very common to use all capital letters so u remember that it's a const */
 
+function printManyTimes(str) {
+    "use strict";
+
+    var sentence = str + " is cool!";
+
+    sentence = str + " is amazing!";
+
+    for (var i=0; i < str.length; i+=2) {
+        console.log(sentence);
+    }
+}
+
+printManyTimes("MICKEY");
+
