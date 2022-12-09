@@ -1381,7 +1381,7 @@ function printManyTimes(str) {
 
     var sentence = str + " is cool!";
 
-    sentence = str + " is amazing!";
+    sentence = str + " is amazing!";  ///reassign sentence to
 
     for (var i=0; i < str.length; i+=2) {
         console.log(sentence);
@@ -1401,4 +1401,4 @@ function printMany(str) {
         console.log(SENTENCE);
     }
 }
-printMany("MICKEY");
+printMany("freecodecamp");
