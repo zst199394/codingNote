@@ -1509,3 +1509,4 @@ const PI = freezeObj();
 
 console.log(PI);
 
+/** Use Arrow Functions to Write Concise Anonymous Functions  */
