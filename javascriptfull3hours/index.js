@@ -1057,7 +1057,7 @@ function updateRecords(id, prop, value) {
     if (value === "") {
         delete collection[id][prop];  // delete if there is no value for this property
     } else if (prop === "tracks") {
-        collection[id][prop] = collection[id][prop] || []; // make sure tracks will be array -exist or nor exist yet
+        collection[id][prop] = collection[id][prop] || []; // make sure tracks will be array -exist or not exist yet
         collection[id][prop].push(value);
     } else {
         collection[id][prop] = value;
@@ -1068,6 +1068,49 @@ function updateRecords(id, prop, value) {
 updateRecords(2345, "tracks", "test...");
 updateRecords(5439,"tracks","1234....");
 console.log(updateRecords(5439,"album","ABCD"));
+
+
+/** Test Code Freecodecamp  *
+// Setup
+const recordCollection = {
+  2548: {
+    albumTitle: 'Slippery When Wet',
+    artist: 'Bon Jovi',
+    tracks: ['Let It Rock', 'You Give Love a Bad Name']
+  },
+  2468: {
+    albumTitle: '1999',
+    artist: 'Prince',
+    tracks: ['1999', 'Little Red Corvette']
+  },
+  1245: {
+    artist: 'Robert Palmer',
+    tracks: []
+  },
+  5439: {
+    albumTitle: 'ABBA Gold'
+  }
+};
+
+// Only change code below this line
+var recordCollectionCopy = JSON.parse(JSON.stringify(recordCollection));
+console.log(recordCollectionCopy);
+
+function updateRecords(records, id, prop, value) {
+  if (value === "") {
+    delete records[id][prop];
+  } else if (prop === "tracks") {
+    records[id][prop] = records[id][prop] || [];
+    records[id][prop].push(value);
+  } else {
+    records[id][prop] = value;
+  }
+  return records;
+}
+
+updateRecords(recordCollection, 5439, 'artist', 'ABBA');
+console.log(updateRecords)
+ */
 
 
 /*** Iterate with While Loops 
@@ -1083,6 +1126,18 @@ while(i < 5) {
 }
 
 console.log(myArray);  [0,1,2,3,4]
+
+/**
+// Setup
+const myArray = [];
+let i = 5;
+
+while (i >= 0) {
+  myArray.push(i);
+  i --;
+}
+console.log(myArray);  // [5,4,3,2,1,0]
+ */
 
 
 /* Iterate With For Loops */
@@ -1290,14 +1345,19 @@ console.log("checkEqual：  "+checkEqual(1,2));
 function checkSign(num) {
     return num > 0 ? "positive" : num < 0 ? "negative" : "zero"
 }
-console.log("checkSign: " + checkSign(0));
+console.log("checkSign: " + checkSign(7));
 
 
 /** Differences Between the var and let Keywords     ?????
  * var
  * let   ----Doesn't let you declare a variable twice !!!
- * const
-* a lot of people use "use strict" at the top of a full Javascript file or just in a function to catch coding mistakes
+ * const CAPITAL=" "
+ * has all the features of let but it's also read-only
+ * cannot reassign a const 
+ * Always use const if you never want to reassign a variable !!!!!
+ *  so u don't accidentally reassign it when u don't mean to
+ * const SENTENCE = str + "";   it's very common to use all capital letters so u remember that it's a const 
+ a lot of people use "use strict" at the top of a full Javascript file or just in a function to catch coding mistakes
  * such as if u create a vaiable and don't declare it with var,let ,or const
  */
 
@@ -1404,7 +1464,10 @@ function printMany(str) {
 printMany("freecodecamp");
 
 
-/** Mutate an Array Declared with const  ** */
+/** Mutate an Array Declared with const  **
+ *  while u cannot reassign a variable declare with const you can mutate an array ...
+ * s is read-only   However we can update the array using bracket notation ---going to reassign th array
+ */
 const s = [5, 7, 2];
 function editInPlace() {
     "use strict";
@@ -1419,4 +1482,8 @@ editInPlace();
 console.log(s);
 
 
-/** Prevent object Mutation  */
+/** Prevent object Mutation  
+ * object.freeze
+*/
+
+
