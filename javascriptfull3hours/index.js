@@ -1489,7 +1489,6 @@ console.log(s);
  * So whenever u have an object and you don't want any of the items in the obj to change
  * use   object.freeze
 */
-
 function freezeObj() {
     "use strict";
     const  MATH_CONSTANTS = {
