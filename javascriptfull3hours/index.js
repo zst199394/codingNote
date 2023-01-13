@@ -1483,7 +1483,11 @@ console.log(s);
 
 
 /** Prevent object Mutation   2:44:52
- * object.freeze
+ * object.freeze will freeze the MATH_CONSTANTS.PI then try {} not gonna work and
+ * it's going into catch block and it's going to log out the error or the exception
+ * PI stays the same 3.14
+ * So whenever u have an object and you don't want any of the items in the obj to change
+ * use   object.freeze
 */
 
 function freezeObj() {
@@ -1492,7 +1496,7 @@ function freezeObj() {
         PI: 3.14
     };
 
-    // Object.freeze(MATH_CONSTANTS);
+    Object.freeze(MATH_CONSTANTS);
 
     try {
         MATH_CONSTANTS.PI = 99;
