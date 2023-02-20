@@ -1518,7 +1518,6 @@ console.log(PI);
 const magic = () => new Date();
  console.log(magic);
 
- 
 /** Write Arrow Functions with Parameters */
 
 //  var myConcat = function(arr1, arr2) {
