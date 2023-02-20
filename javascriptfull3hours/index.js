@@ -1479,7 +1479,7 @@ function editInPlace() {
 
 }
 editInPlace();
-console.log(s);
+console.log("s : "+s);
 
 
 /** Prevent object Mutation   2:44:52
@@ -1507,7 +1507,7 @@ function freezeObj() {
 
 const PI = freezeObj();
 
-console.log(PI);
+console.log("PI: "+ PI);
 
 /** Use Arrow Functions to Write Concise Anonymous Functions  */
 
